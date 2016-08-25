@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Video Recon</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+<script src="controllers/DemoCtrl.js"></script>
+
+<script>
+    var app = angular.module("app", [])
+            .controller('DemoCtrl', DemoCtrl);
+</script>
+
+<body ng-controller="DemoCtrl">
+<table style="width:60%">
+    <tr>
+        <td>
+            <div class="button-tile" ng-click="loadLocal()">
+                <img src="resources/puppy1.jpg">
+            </div>
+        </td>
+        <td>
+            <div class="button-tile" ng-click="loadServer()">
+                <img src="resources/puppy2.jpg">
+            </div>
+        </td>
+        <td>
+            <div class="button-tile" ng-click="loadRedirect()">
+                <img src="resources/puppy3.jpg">
+            </div>
+        </td>
+    </tr>
+</table>
+<div>
+    Content: <pre>{{demoContent}}</pre>
+</div>
+</body>
+</html>

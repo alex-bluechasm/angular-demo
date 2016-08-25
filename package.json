@@ -1,0 +1,12 @@
+{
+  "name": "VideoRecon",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "cfenv": "latest",
+    "express": "^4.14.0"
+  }
+}
